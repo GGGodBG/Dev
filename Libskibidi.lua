@@ -51,10 +51,10 @@ local function MakeDraggable(topbarobject, object)
 		local DragStart = nil
 		local StartSize = nil
 		local maxSizeX = object.Size.X.Offset
-		if maxSizeX < 410 then
-			maxSizeX = 410
+		if maxSizeX < 450 then
+			maxSizeX = 450
 		end
-		local maxSizeY = maxSizeX - 100
+		local maxSizeY = maxSizeX - 110
 		object.Size = UDim2.new(0, maxSizeX, 0, maxSizeY)
 		local changesizeobject = Instance.new("Frame");
 
@@ -147,7 +147,7 @@ function VolcanoLib:MakeNotify(NotifyConfig)
 	NotifyConfig.Title = NotifyConfig.Title or "Volcano Hub"
 	NotifyConfig.Description = NotifyConfig.Description or "Notification"
 	NotifyConfig.Content = NotifyConfig.Content or "Content"
-	NotifyConfig.Color = NotifyConfig.Color or Color3.fromRGB(255, 0, 255)
+	NotifyConfig.Color = NotifyConfig.Color or Color3.fromRGB(255, 128, 160)
 	NotifyConfig.Time = NotifyConfig.Time or 0.5
 	NotifyConfig.Delay = NotifyConfig.Delay or 5
 	local NotifyFunction = {}
@@ -366,7 +366,7 @@ function VolcanoLib:MakeGui(GuiConfig)
 	local GuiConfig = GuiConfig or {}
 	GuiConfig.NameHub = GuiConfig.NameHub or "Volcano Hub"
 	GuiConfig.Description = GuiConfig.Description or ""
-	GuiConfig.Color = GuiConfig.Color or Color3.fromRGB(255, 0, 255)
+	GuiConfig.Color = GuiConfig.Color or Color3.fromRGB(255, 128, 160)
 	GuiConfig["Logo Player"] = GuiConfig["Logo Player"] or "https://www.roblox.com/headshot-thumbnail/image?userId="..game:GetService("Players").LocalPlayer.UserId .."&width=420&height=420&format=png"
 	GuiConfig["Name Player"] = GuiConfig["Name Player"] or tostring(game:GetService("Players").LocalPlayer.Name)
 	GuiConfig["Tab Width"] = GuiConfig["Tab Width"] or 125
